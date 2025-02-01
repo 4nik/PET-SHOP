@@ -1,3 +1,6 @@
+body {
+    font-family: 'ADLaM Display', sans-serif;
+}
 .brand-text {
     font-weight: 700;
     letter-spacing: -0.02em;
@@ -26,4 +29,8 @@
 
 .bg-gradient-yellow {
     background: linear-gradient(120deg, #FFF9B0 0%, #FFE55C 100%);
+}
+footer {
+    position: relative;
+    z-index: 10;
 }
