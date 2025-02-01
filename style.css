@@ -1,0 +1,29 @@
+.brand-text {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+
+.icon-btn {
+    padding: 0.5rem;
+    color: #4B5563;
+    border-radius: 0.375rem;
+    transition: all 0.2s;
+}
+
+.icon-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Mobile menu */
+.mobile-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+.bg-gradient-blue {
+    background: linear-gradient(120deg, #E5C6FC 0%, #8EC5FC 100%);
+}
+
+.bg-gradient-yellow {
+    background: linear-gradient(120deg, #FFF9B0 0%, #FFE55C 100%);
+}
