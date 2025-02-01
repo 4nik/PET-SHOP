@@ -8,8 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'float': 'float 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-30px)' },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -44,8 +60,7 @@
                                     d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
                             </svg>
                         </button>
-                        <button
-                            class="px-4 py-2 text-gray-700 hover:text-gray-900 border border-gray-300 rounded-lg">Login</button>
+                        <button class="px-6 py-2 text-gray-700 hover:text-gray-900 border border-[#FFD233] rounded-lg">Login</button>
                         <button class="px-4 py-2 bg-[#FFD233] text-black rounded-lg hover:bg-yellow-400">Register</button>
                     </div>
         
@@ -80,7 +95,7 @@
                     </a>
                 </div>
                 <img src="./assets/cat-big.png" alt="Banner Image"
-                    class="absolute top-[45%] lg:top-0 right-0 h-[45%] lg:h-full object-contain z-0">
+                    class="absolute top-[45%] lg:top-0 right-0 h-[45%] lg:h-full object-contain z-0 animate-float">
             </div>
         </section>
     </header>
