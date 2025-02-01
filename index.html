@@ -19,13 +19,13 @@
                     </div>
         
                     <!-- Desktop Menu -->
-                    <ul class="hidden md:flex space-x-8">
+                    <ul class="hidden lg:flex space-x-8">
                         <li><a href="find-pet" class="text-gray-700 hover:text-gray-900">Find a pet</a></li>
                         <li><a href="breeds" class="text-gray-700 hover:text-gray-900">Breeds</a></li>
                         <li><a href="Contact us" class="text-gray-700 hover:text-gray-900">Contact us</a></li>
                     </ul>
         
-                    <div class="hidden md:flex items-center gap-4">
+                    <div class="hidden lg:flex items-center gap-4">
                         <button class="icon-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -46,7 +46,7 @@
                     </div>
         
                     <!-- Mobile Menu Button -->
-                    <div class="md:hidden">
+                    <div class="lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -60,23 +60,23 @@
         <section class="banner-section">
             <div class="max-w-[1400px] mx-auto px-4 lg:px-8 relative">
                 <div class="relative z-10">
-                    <h1 class="text-[2.5rem] md:text-[3.5rem] font-bold leading-[1.1] pt-8 md:pt-20 mb-6">
+                    <h1 class="text-[2.5rem] lg:text-[3.5rem] font-bold leading-[1.1] pt-8 lg:pt-20 mb-6">
                         Pamper Your Pet,<br>
                         Because They<br>
                         Deserve<br>
                         the Best
                     </h1>
-                    <p class="text-gray-600 text-base md:text-lg mb-8 max-w-[480px]">
+                    <p class="text-gray-600 text-base lg:text-lg mb-8 max-w-[480px]">
                         Discover a world of treats, toys, and essentials handpicked for
                         your furry friends. Shop now and make tails wag with joy!
                     </p>
                     <a href="#"
-                        class="inline-block px-8 md:px-12 py-3 md:py-4 bg-[#FFD233] hover:bg-yellow-400 rounded-full text-black font-medium text-base md:text-lg transition-colors">
+                        class="inline-block px-8 lg:px-12 py-3 lg:py-4 bg-[#FFD233] hover:bg-yellow-400 rounded-full text-black font-medium text-base lg:text-lg transition-colors">
                         Find a pet
                     </a>
                 </div>
                 <img src="./assets/cat-big.png" alt="Banner Image"
-                    class="absolute top-[45%] md:top-0 right-0 h-[45%] md:h-full object-contain z-0">
+                    class="absolute top-[45%] lg:top-0 right-0 h-[45%] lg:h-full object-contain z-0">
             </div>
         </section>
     </header>
@@ -84,7 +84,7 @@
         <!-- Categories Section -->
         <section class="categories-section py-16">
             <div class="max-w-[1400px] mx-auto px-4 lg:px-8">
-                <h2 class="text-3xl md:text-4xl font-bold mb-12">Browse By Categories</h2>
+                <h2 class="text-3xl lg:text-4xl font-bold mb-12">Browse By Categories</h2>
                 <div class="grid grid-cols-2 lg:grid-cols-6 gap-4 lg:gap-6">
                     <!-- Dog Card -->
                     <div class="bg-[#F9DF8A] rounded-2xl p-8 flex flex-col items-center h-[230px]">
@@ -358,7 +358,7 @@
         <section class="py-16">
             <div class="max-w-[1400px] mx-auto px-4 lg:px-8">
                 <h2 class="text-3xl font-bold mb-8">Everyday Low Price</h2>
-                <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
                     <!-- Card 1 - Takes 3 columns -->
                     <div class="bg-gradient-blue lg:col-span-3 rounded-3xl h-[450px] relative overflow-hidden">
                         <div class="p-12 relative z-10 h-full flex flex-col">
@@ -381,6 +381,41 @@
                         </div>
                         <img src="./assets/cute-pet-mid.png" alt="T-Shirt for Dogs"
                             class="absolute bottom-0 right-0 h-[75%] lg:h-[85%] object-contain">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="max-w-[1320px] mx-auto px-4 lg:px-8">
+                <div class="bg-[#FFF9F4] rounded-3xl p-8 lg:p-16 shadow-lg">
+                    <!-- Mobile Layout (flex-col) / Desktop Layout (flex row) -->
+                    <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between lg:gap-8">
+                        <!-- Image - Centered on mobile, left on desktop -->
+                        <div class="flex justify-center lg:w-1/2">
+                            <img src="./assets/cute-pet-mid.png" alt="Cute dog in blue and yellow outfit"
+                                class="w-[200px] lg:w-[62%] object-contain">
+                        </div>
+        
+                        <!-- Content - Centered on mobile, left-aligned on desktop -->
+                        <div class="lg:w-1/2 text-center lg:text-left">
+                            <h2 class="text-2xl lg:text-4xl font-bold mb-4">Get Pawsome News!</h2>
+                            <p class="text-gray-600 text-base lg:text-lg mb-8">
+                                Exclusive training tips, tricks, product deals and more.
+                            </p>
+        
+                            <!-- Email Form -->
+                            <form class="space-y-4">
+                                <div>
+                                    <input type="email" placeholder="Enter email...."
+                                        class="w-full px-6 py-4 rounded-xl border border-gray-200 focus:outline-none focus:border-gray-300">
+                                </div>
+                                <button type="submit"
+                                    class="w-[40%] lg:w-auto px-8 py-4 bg-[#FFD233] text-black font-medium rounded-xl hover:bg-yellow-400 transition-colors">
+                                    Subscribe
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
